@@ -23,6 +23,7 @@ The hex-switch signals control the 4 lowest address inputs of the logic ROM IC. 
 
 ## Parts
 
+Use following or equivalent components for the PCB.  U1 and U2 are not soldered but installed into sockets. U1 can be SST39SF020 or 040. U2 can be the same or also smaller SST39SF010. There are also other voltage and pinout compatible ICs. 
 | Definition                             | Manufacturer         | Manufacturer PN       | Designator             | Quantity |
 | -------------------------------------- | -------------------- | --------------------- | ---------------------- | -------- |
 | CAP CER 100nF 50V X7R TH 200mil        | KEMET                | C330C104K5R5TA        | C1, C2, C3             | 3        |
@@ -35,7 +36,7 @@ The hex-switch signals control the 4 lowest address inputs of the logic ROM IC. 
 | IC D-TYPE TRANSPARENT LATCH 8:8 20-DIP | Texas Instruments    | SN74HC573AN           | U3                     | 1        |
 | SOCKET PLCC-32 TH                      | Adam Tech            | PLCC-32-AT            | (U1, U2)               | 2        |
 
-
+Use the following or similar part for assembly. I ordered the PCBs from JLCpcb.
 | Definition       | Link                                                                                                           | Quantity |
 | ---------------- | -------------------------------------------------------------------------------------------------------------- | -------- |
 | PCB              | [https://jlcpcb.com/](https://jlcpcb.com/)                                                                     | 1        |
