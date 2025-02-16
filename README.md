@@ -4,7 +4,7 @@
 
 HEXcart is a cartridge for the Commodore 64. It can fit 16pcs of 8 or 16kB ROM images and supports regular and ultimax ROMs. The cartridge was designed mainly for diagnostics use with different tools like Dead Test and Diagnostics. Selection is done with a hex-switch so it can be used with a faulty C64 without any selection menus.
 <p align="center">
-    <img src="images/Cart_PCB-case.PNG">
+    <img src="images/Cart_PCB-case.PNG" width="500">
 </p>
 
 ## Theory of operation
@@ -15,7 +15,7 @@ HEXcart contains two flash ROM ICs, U1 and U2. One is used for software and the 
 The logic ROM IC is used to set the EXROM and GAME signals to the correct state for regular or ultimax ROMs. No need for jumpers or switches.
 The EXROM and GAME signals need to be in the correct state so the ROM is mapped into the correct address space. Notice the signals are active low.
 <p align="center">
-    <img src="images/EXROM_GAME_table.png">
+    <img src="images/EXROM_GAME_table.png" width="300">
 </p>
 The hex-switch outputs go to a transparent latch IC U3. The latch is used for saving the state of the hex-switch during power-up/reset. This allows to set the hex-switch to different position while the machine is on. The new selected ROM is activated at the next power-up/reset. The LE (latch Enable) input of the latch IC is low active. Reset signal is therefore inverted with fet Q1 and resistor R2. If you don't need this latch feature you can leave out U3, Q1 and R2. Circuit is then replaced with four jumpers shorting pads 2&19, 3&18, 4&17 and 5&16 of U3 footprint. Short positions are marked on the PCB.<br/><br/
 
@@ -70,7 +70,7 @@ The .bin or .hex can be directly imported to a programming software like Xgpro (
 Programming of the logic ROM IC is simple. Just open Xgrpo or other flashing tool software. Edit the first 16 bytes to match the 16 slots of the software ROM IC. Set the low nibble to 0, 1 or 2 as in following table. High nibble does not matter and can be left as default "F" or set to 0.
 
 <p align="center">
-    <img src="images/Value_mode_table.png">
+    <img src="images/Value_mode_table.png" width="350">
 </p>
 In the image below the logic ROM is programmed to set EXROM and GAME signals for a 16kB ROM in slot 0, 8kB ROM in slot 1 and a ultimax ROM in slot 3. The rest of the slots 3-F are empty.
 <p align="center">
