@@ -19,4 +19,4 @@ There are ready made images for SW & logic ROMs.
 Making your own compilations is easy. 
 ## Schematic
 
-[Intro.pdf](http://1c3d1v3r.github.io/HEXcart/docs/HEXcart R2 schematic.pdf)
+[HEXcart PDF schematic](docs/HEXcart R2 schematic.pdf)\
