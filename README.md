@@ -8,7 +8,9 @@ HEXcart is a cartridge for Commodore 64. It can fit 16pcs of 8 or 16kB ROM image
 
 HEXcart contains two flash ROM ICs. One is used for software and the other one is for logic. The logic ROM IC sets the EXROM and GAME signals to the correct state for regular of ultimax ROMs. No need for jumpers or switches.
 THE EROM and GAME signals need to be in the correct state so the ROM is mapped into the correct address space.
-
+<p align="center">
+    <img src="images/EXROM_GAME_table.png">
+</p>
 
 Both the software ROM and logic ROM are SST39SF020/040 flash ROM ICs. So anyone who can program the flash ROM can also configure the logic ROM. The configuration of the logic ROM is simple.
 
