@@ -58,7 +58,7 @@ Gerbers can be downloaded from [HERE](https://github.com/1c3d1v3r/HEXcart/blob/m
 
 ## Programming the software ROM IC
 
-The software ROM IC got 16 pieces of 16kB slots. If you have a 8kB ROM image then it's easiest to copy it twice to fill a 16kB slot. If you use empty space instead then a regular 8kB ROM must be in the lower half of the slot. An 8kB ultimax ROM image must be in the upper half.<br/>
+The software ROM IC got 16 pieces of 16kB slots. If you have an 8kB ROM image then it's easiest to copy it twice to fill a 16kB slot. If you use empty space instead then a regular 8kB ROM must be in the lower half of the slot. An 8kB ultimax ROM image must be in the upper half.<br/>
 
 ROM images can be found as raw .bin or .hex files. These can be directly combined and programmed into the ROM IC. ROM images can also be found as .crt files. These files got extra information at the start of the files for emulators etc. You can use cartconv.exe to extract .bin file of the .crt file. Use command _cartconv -i "input.crt" -o "output.bin"_ for extacting the .bin file. The output text also tells you what king of cartridge it is.<br/>
 
@@ -69,7 +69,9 @@ The .bin or .hex can be directly imported to a programming software like Xgpro (
 
 Programming of the logic ROM IC is simple. Just open Xgrpo or other flashing tool software. Edit the first 16 bytes to match the 16 slots of the software ROM IC. Set the low nibble to 0, 1 or 2 as in following table. High nibble does not matter and can be left as default "F" or set to 0.
 
-INSERT TABLE 
+<p align="center">
+    <img src="images/Value_mode_table.png">
+</p>
 
 <p align="center">
     <img src="images/logic_ROM_edit.PNG">
