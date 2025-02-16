@@ -2,9 +2,9 @@
     <img src="images/logo.png">
 </p>
 
+HEXcart is a cartridge for Commodore 64. It can fit 16pcs of 8 or 16kB ROM images and supports regular and ultimax ROMs. ROM is selected with a hex-switch. The cartridge was designed mainly for diagnostics use with different tools like Dead Test and Diagnostics. Selection is done with a hex-switch so it can be used with a faulty C64 without any selection menus.
 
-# HexCart
-Cartridge for Commodore 64. Can fit 16pcs of 16kB or maximum 32pcs of 8kB images. Supports regular images and Ultimax images. Bank selection is done with a hex-switch. There is an extra switch for selecting the 8kB image in the bank.  ROM logic for automatic setting of standard or Ultimax images. No jumpers!!!
+HEXcart contains two flash ROM ICs. One is used for software and the other one is for logic. The logic ROM IC sets the EXROM and GAME signals to the correct state for regular of ultimax ROMs. No need for jumpers or switches. One extra latch IC is used for latching the value of the hex-switch. This allows selecting the ROM with the C64 powered on. Pressing the reset switch latches the hex-switch position and selects the desired ROM image. THe latch IC can be left out and replaced with jumpers if there is no need to select ROMs with the machine powered on.
 
 Both the SW (software) ROM and logic ROM are SST39SF020/040 flash ROM ICs. So anyone who can program the flash ROM can also configure the logic ROM. The configuration of the logic ROM is simple.
 
