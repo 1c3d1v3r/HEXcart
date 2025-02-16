@@ -17,3 +17,6 @@ There are ready made images for SW & logic ROMs.
 - Tools. Including Dead Test 781220, Diagnostics 586220++, 1541 Diagnostic Cartridge etc.
 
 Making your own compilations is easy. 
+## Schematic
+
+[Intro.pdf](http://1c3d1v3r.github.io/HEXcart/docs/HEXcart R2 schematic.pdf)
