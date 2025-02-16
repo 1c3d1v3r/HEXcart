@@ -67,7 +67,9 @@ The .bin or .hex can be directly imported to a programming software like Xgpro (
 
 ## Programming the logic ROM IC
 
-Programming of the logic ROM IC is simple. Just open Xgrpo or other flashing tool software. Edit the first 16 bytes to match the 16 slots of the software ROM IC.
+Programming of the logic ROM IC is simple. Just open Xgrpo or other flashing tool software. Edit the first 16 bytes to match the 16 slots of the software ROM IC. Set the low nibble to 0, 1 or 2 as in following table. High nibble does not matter and can be left as default "F" or set to 0.
+
+INSERT TABLE 
 
 <p align="center">
     <img src="images/logic_ROM_edit.PNG">
