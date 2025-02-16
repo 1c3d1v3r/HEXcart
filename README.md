@@ -6,6 +6,7 @@ HEXcart is a cartridge for Commodore 64. It can fit 16pcs of 8 or 16kB ROM image
 <p align="center">
     <img src="images/Cart_PCB-case.PNG">
 </p>
+
 ## Theory of operation
 <p align="center">
     <img src="images/schematic.png">
