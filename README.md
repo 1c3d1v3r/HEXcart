@@ -72,7 +72,7 @@ Programming of the logic ROM IC is simple. Just open Xgrpo or other flashing too
 <p align="center">
     <img src="images/Value_mode_table.png">
 </p>
-In the image below the logic ROM is programmed to have a 16kB ROM in slot 0, 8kB ROM in slot 1 and a ultimax ROM in slot 3. The rest of the lots 3-F are empty.
+In the image below the logic ROM is programmed to set EXROM and GAME signals for a 16kB ROM in slot 0, 8kB ROM in slot 1 and a ultimax ROM in slot 3. The rest of the slots 3-F are empty.
 <p align="center">
     <img src="images/logic_ROM_edit.PNG">
 </p>
