@@ -62,8 +62,9 @@ The software ROM IC got 16 pieces of 16kB slots. If you have a 8kB ROM image the
 
 ROM images can be found as raw .bin or .hex files. These can be directly combined and programmed into the ROM IC. ROM images can also be found as .crt files. These files got extra information at the start of the files for emulators etc. You can use cartconv.exe to extract .bin file of the .crt file. Use command _cartconv -i "input.crt" -o "output.bin"_ for extacting the .bin file. The output text also tells you what king of cartridge it is.<br/>
 
-The .bin or .hex can be directly imported to a programming software like Xgpro (which I use) or combined beforehand. In Windows OS use _copy /b file1.bin+file2.bin combined.bin_. In Linux the command is _cat file1.bin file2.bin > combined.bin_.
+The .bin or .hex can be directly imported to a programming software like Xgpro (which I use) or combined beforehand. In Windows use _copy /b file1.bin+file2.bin combined.bin_. In Linux the command is _cat file1.bin file2.bin > combined.bin_.
 
 
-## PRogramming the logic ROM IC
+## Programming the logic ROM IC
+
 
