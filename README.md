@@ -7,7 +7,7 @@ HEXcart is a cartridge for the Commodore 64. It can fit 16pcs of 8 or 16kB ROM i
     <img src="images/Cart_PCB-case.PNG" width="500">
 </p>
 
-## Theory of operation
+### Theory of operation
 <p align="center">
     <img src="images/schematic.png">
 </p>
@@ -20,7 +20,7 @@ The hex-switch signals control the 4 highest address inputs of the software ROM 
 
 The hex-switch signals control the 4 lowest address inputs of the logic ROM IC. Therefore it selects one of the first 16 bytes. These bytes are used to program the type of the cartridge. Outputs DQ0 and DQ1 control the GAME and EXROM signals. For example if the fift 16kB slot in the software ROM IC contains a regular 16kB game then the fift byte of the logic ROM IC must have two lowest bits zero.<br/>
 
-## Parts
+### Parts
 
 Use following or equivalent components for the PCB.  U1 and U2 are not soldered but installed into sockets. U1 can be SST39SF020A or 040. U2 can be the same or also smaller SST39SF010A. There are also other voltage and pinout compatible ROM ICs. 
 | Definition                             | Manufacturer         | Manufacturer PN       | Designator             | Quantity |
@@ -35,10 +35,10 @@ Use following or equivalent components for the PCB.  U1 and U2 are not soldered 
 | IC D-TYPE TRANSPARENT LATCH 8:8 20-DIP | Texas Instruments    | SN74HC573AN           | U3                     | 1        |
 | SOCKET PLCC-32 TH                      | Adam Tech            | PLCC-32-AT            | (U1, U2)               | 2        |
 
-Use the following or similar part for assembly. I ordered the PCBs from JLCpcb.
+Use the following or similar part for assembly. If you don't need the PCB case then leave out all except the cartridge PCB. Top and bottom cover PCBs can be flipped around to have different PCB artwork. One side of the top cover got a premade list for marking the ROM image names. The other side is almost blank for printed labels.
 | Definition       | Link                                                                                                           | Quantity |
 | ---------------- | -------------------------------------------------------------------------------------------------------------- | -------- |
-| PCB              | [https://jlcpcb.com/](https://jlcpcb.com/)                                                                     | 1        |
+| Cartridge PCB    | [https://jlcpcb.com/](https://jlcpcb.com/)                                                                     | 1        |
 | Top cover PCB    | [https://jlcpcb.com/](https://jlcpcb.com/)                                                                     | 1        |
 | Bottom cover PCB | [https://jlcpcb.com/](https://jlcpcb.com/)                                                                     | 1        |
 | M3x4 screw       | [https://www.aliexpress.com/item/1005003640441632.html](https://www.aliexpress.com/item/1005003640441632.html) | 12       |
@@ -46,14 +46,14 @@ Use the following or similar part for assembly. I ordered the PCBs from JLCpcb.
 | M3x8 set screw   | [https://www.aliexpress.com/item/1005005720795823.html](https://www.aliexpress.com/item/1005005720795823.html) | 2        |
 | Reset switch hat | [https://www.aliexpress.com/item/1005006228397255.html](https://www.aliexpress.com/item/1005006228397255.html) | 1        |
 
-## Gerbers
+### Gerbers
 Gerbers can be downloaded from [HERE](https://github.com/1c3d1v3r/HEXcart/blob/master/gerbers/gerbers.md).
 
-## Schematic PDF
+### Schematic PDF
 
 [HEXcart PDF schematic](docs/HEXcart_R2_schematic.pdf)
 
-## Programming the software ROM IC
+### Programming the software ROM IC
 
 The software ROM IC got 16 pieces of 16kB slots. If you have an 8kB ROM image then it's easiest to copy it twice to fill a 16kB slot. If you use empty space instead then a regular 8kB ROM must be in the lower half of the slot. An 8kB ultimax ROM image must be in the upper half.<br/>
 
@@ -62,7 +62,7 @@ Cartridge ROM images can be found as raw .bin or .hex files. These can be direct
 The .bin or .hex can be directly imported to a programming software like Xgpro or combined beforehand. In Windows use _copy /b file1.bin+file2.bin combined.bin_. In Linux the command is _cat file1.bin file2.bin > combined.bin_.
 
 
-## Programming the logic ROM IC
+### Programming the logic ROM IC
 
 Programming of the logic ROM IC is simple. Just open Xgrpo or other flashing tool software. Edit the first 16 bytes to match the 16 slots of the software ROM IC. Set the low nibble to 0, 1 or 2 as in following table. High nibble does not matter and can be left as default "F" or set to 0.
 
@@ -74,8 +74,8 @@ In the image below the logic ROM is programmed to set EXROM and GAME signals for
     <img src="images/logic_ROM_edit.PNG">
 </p>
 
-## Premade ROM collections
+### Premade ROM collections
 Coming soon ...
 
-## Licence
+### Licence
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">neatROM</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/1c3d1v3r/">Pasi Lassila</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
