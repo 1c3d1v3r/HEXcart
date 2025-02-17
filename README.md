@@ -13,10 +13,7 @@ HEXcart is a cartridge for the Commodore 64. It can fit 16pcs of 8 or 16kB ROM i
 </p>
 HEXcart contains two flash ROM ICs, U1 and U2. One is used for software and the second one is for logic. The softawe ROM IC must be at least 256kB in size to fit 16 pcs of 16kB ROM images.<br/><br/>
 The logic ROM IC is used to set the EXROM and GAME signals to the correct state for regular or ultimax ROMs. No need for jumpers or switches.
-The EXROM and GAME signals need to be in the correct state so the ROM is mapped into the correct address space. Notice the signals are active low.
-<p align="center">
-    <img src="images/EXROM_GAME_table.png" width="250">
-</p>
+The EXROM and GAME signals need to be in the correct state so the ROM is mapped into the correct address space.<br/><br/>
 The hex-switch outputs go to a transparent latch IC U3. The latch is used for saving the state of the hex-switch during power-up/reset. This allows to set the hex-switch to different position while the machine is on. The new selected ROM is activated at the next power-up/reset. The LE (latch Enable) input of the latch IC is low active. Reset signal is therefore inverted with fet Q1 and resistor R2. If you don't need this latch feature you can leave out U3, Q1 and R2. Circuit is then replaced with four jumpers shorting pads 2&19, 3&18, 4&17 and 5&16 of U3 footprint. Short positions are marked on the PCB.<br/><br/
 
 The hex-switch signals control the 4 highest address inputs of the software ROM IC. Therefore the hex-switch can select 16 different 16kB slots. The software ROM IC is enabled if either ROML or ROMH signal is low. This is done by diode-OR circuit with D2 and D3. The low active ROML and ROMH signals are used by the C64 to select low or high half of the 16kB ROM. That is why ROML signal must be connected to software ROM IC address pin A13.<br/>
@@ -25,7 +22,7 @@ The hex-switch signals control the 4 lowest address inputs of the logic ROM IC. 
 
 ## Parts
 
-Use following or equivalent components for the PCB.  U1 and U2 are not soldered but installed into sockets. U1 can be SST39SF020 or 040. U2 can be the same or also smaller SST39SF010. There are also other voltage and pinout compatible ICs. 
+Use following or equivalent components for the PCB.  U1 and U2 are not soldered but installed into sockets. U1 can be SST39SF020A or 040. U2 can be the same or also smaller SST39SF010A. There are also other voltage and pinout compatible ROM ICs. 
 | Definition                             | Manufacturer         | Manufacturer PN       | Designator             | Quantity |
 | -------------------------------------- | -------------------- | --------------------- | ---------------------- | -------- |
 | CAP CER 100nF 50V X7R TH 200mil        | KEMET                | C330C104K5R5TA        | C1, C2, C3             | 3        |
@@ -60,9 +57,9 @@ Gerbers can be downloaded from [HERE](https://github.com/1c3d1v3r/HEXcart/blob/m
 
 The software ROM IC got 16 pieces of 16kB slots. If you have an 8kB ROM image then it's easiest to copy it twice to fill a 16kB slot. If you use empty space instead then a regular 8kB ROM must be in the lower half of the slot. An 8kB ultimax ROM image must be in the upper half.<br/>
 
-ROM images can be found as raw .bin or .hex files. These can be directly combined and programmed into the ROM IC. ROM images can also be found as .crt files. These files got extra information at the start of the files for emulators etc. You can use cartconv.exe to extract .bin file of the .crt file. Use command _cartconv -i "input.crt" -o "output.bin"_ for extacting the .bin file. The output text also tells you what king of cartridge it is.<br/>
+Cartridge ROM images can be found as raw .bin or .hex files. These can be directly combined and programmed into the ROM IC. ROM images can also be found as .crt files. These files got extra information at the start of the files for emulators etc. You can use cartconv.exe to extract .bin file of the .crt file. Use command _cartconv -i "input.crt" -o "output.bin"_ for extacting the .bin file. The output text also tells you what king of cartridge it is.<br/>
 
-The .bin or .hex can be directly imported to a programming software like Xgpro (which I use) or combined beforehand. In Windows use _copy /b file1.bin+file2.bin combined.bin_. In Linux the command is _cat file1.bin file2.bin > combined.bin_.
+The .bin or .hex can be directly imported to a programming software like Xgpro or combined beforehand. In Windows use _copy /b file1.bin+file2.bin combined.bin_. In Linux the command is _cat file1.bin file2.bin > combined.bin_.
 
 
 ## Programming the logic ROM IC
@@ -77,3 +74,8 @@ In the image below the logic ROM is programmed to set EXROM and GAME signals for
     <img src="images/logic_ROM_edit.PNG">
 </p>
 
+## Premade ROM collections
+Coming soon ...
+
+## Licence
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">neatROM</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/1c3d1v3r/">Pasi Lassila</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
