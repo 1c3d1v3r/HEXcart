@@ -4,7 +4,7 @@
 
 HEXcart is a cartridge for the Commodore 64. It can fit 16pcs of 8 or 16kB ROM images and supports regular and ultimax ROMs. The cartridge was designed mainly for diagnostics use with different tools like Dead Test and Diagnostics. Selection is done with a hex-switch so it can be used with a faulty C64 without any selection menus.
 <p align="center">
-    <img src="images/carts_no_bg_645x387.jpg">
+    <img src="images/carts_no_bg_645x387.png">
 </p>
 
 ### Theory of operation
