@@ -20,6 +20,8 @@ The hex-switch signals control the 4 highest address inputs of the software ROM 
 
 The hex-switch signals control the 4 lowest address inputs of the logic ROM IC. Therefore it selects one of the first 16 bytes. These bytes are used to program the type of the cartridge. Outputs DQ0 and DQ1 control the GAME and EXROM signals. For example if the fift 16kB slot in the software ROM IC contains a regular 16kB game then the fift byte of the logic ROM IC must have two lowest bits zero.<br/>
 
+Notice you can disable the cartridge by setting the hex-switch to an empty slot. If a slot is empty the flash content is FF by default. This sets the GAME and EXROM signals high and shows to the C64 as there is no cartridge. This does not work with C128 as it does not used the GAME and EXROM signals.<br/>
+
 ### Parts
 
 Use following or equivalent components for the PCB.  U1 and U2 are not soldered but installed into sockets. U1 can be SST39SF020A or 040. U2 can be the same or also smaller SST39SF010A. There are also other voltage and pinout compatible ROM ICs. 
