@@ -47,6 +47,7 @@ Use the following or similar part for assembly. If you don't need the PCB case t
 | Reset switch hat | [https://www.aliexpress.com/item/1005006228397255.html](https://www.aliexpress.com/item/1005006228397255.html) | 1        |
 
 ### Gerbers
+
 Gerbers can be downloaded from [HERE](https://github.com/1c3d1v3r/HEXcart/blob/master/gerbers).
 
 ### Schematic PDF
