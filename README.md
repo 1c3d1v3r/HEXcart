@@ -47,11 +47,31 @@ Use the following or similar part for assembly. If you don't need the PCB case t
 | Reset switch hat | [https://www.aliexpress.com/item/1005006228397255.html](https://www.aliexpress.com/item/1005006228397255.html) | 1        |
 
 ### Gerbers
-Gerbers can be downloaded from [HERE](https://github.com/1c3d1v3r/HEXcart/blob/master/gerbers/gerbers.md).
+Gerbers can be downloaded from [HERE](https://github.com/1c3d1v3r/HEXcart/blob/master/gerbers).
 
 ### Schematic PDF
 
 [HEXcart PDF schematic](docs/HEXcart_R2_schematic.pdf)
+
+### Assembly
+
+PLCC sockets have tabs on the bottom. Cut them away with side cutters or with a knife. This allows the socket to sit flush or slightly below the front cover.
+<p align="left">
+    <img src="images/PLCC_sockets.png" width="300">
+</p>
+Bend the pins of fet Q1 so it sits horizontally against the PCB. In straight position the front cover wont fit.
+<p align="left">
+    <img src="images/Q1_assy.jpg" width="300">
+</p>
+The cover PCBs are reversible. The top cover has a table on one side. Other side is mostly blank for printed labels. The bottom cover can have white or honeycomb pattern visible.
+<p align="left">
+    <img src="images/Covers.png" width="500">
+</p>
+
+Assemble the PCBs and standoffs. The standoffs at the right are connected together with the set screw.
+<p align="left">
+    <img src="images/Side_assy_no_bg.png" width="500">
+</p>
 
 ### Programming the software ROM IC
 
@@ -75,7 +95,7 @@ In the image below the logic ROM is programmed to set EXROM and GAME signals for
 </p>
 
 ### Premade ROM collections
-See [HERE.](https://github.com/1c3d1v3r/HEXcart/tree/updates/ROM_collections)
+See [HERE.](https://github.com/1c3d1v3r/HEXcart/tree/updates/ROM_collections/README.md)
 
 ### Licence
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">HEXcart</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/1c3d1v3r/">Pasi Lassila</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
