@@ -1,5 +1,8 @@
 ## Tools R0.1
 
+<p align="center">
+    <img src="../images/Tools_0.1_no_bg.png" width="500">
+</p>
 This collection contains a selection of useful testing and diagnostics tools.
 
 [Tools_LOGIC_0.1.bin](https://mega.nz/file/s4Az3RQC#0AALIILTO_BlQCfc2yuEHMHo9lShuli1kKE95MfMlTU)<br>
