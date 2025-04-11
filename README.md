@@ -4,8 +4,7 @@
 
 HEXcart is a cartridge for the Commodore 64. It can fit 16pcs of 8 or 16kB ROM images and supports regular and ultimax ROMs. The cartridge was designed mainly for diagnostics use with different tools like Dead Test and Diagnostics. Selection is done with a hex-switch so it can be used with a faulty C64 without any selection menus.
 <p align="center">
-    <img src="images/Cart_3D.PNG" width="317">
-    <img src="images/Cart_PCB-case.PNG" width="383">
+    <img src="images/carts_no_bg_645x387.png">
 </p>
 
 ### Theory of operation
@@ -76,7 +75,7 @@ In the image below the logic ROM is programmed to set EXROM and GAME signals for
 </p>
 
 ### Premade ROM collections
-Coming soon ...
+See [HERE.](https://github.com/1c3d1v3r/HEXcart/tree/updates/ROM_collections)
 
 ### Licence
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">HEXcart</span> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/1c3d1v3r/">Pasi Lassila</a> is licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
