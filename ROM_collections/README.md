@@ -3,7 +3,7 @@
 <p align="center">
     <img src="../images/Tools_0.1_no_bg.png" width="500">
 </p>
-This collection contains a selection of useful testing and diagnostics tools.
+This collection contains a selection of useful testing and diagnostics tools. Notice some programs requires a test harness for a full OK/PASS result.
 
 [Tools_LOGIC_0.1.bin](https://mega.nz/file/s4Az3RQC#0AALIILTO_BlQCfc2yuEHMHo9lShuli1kKE95MfMlTU)<br>
 [Tools_SW_0.1.bin](https://mega.nz/file/B8wGnSYS#6B2Lxq8vH2qtsERWXBu3kW3TtjZFH5lJO6SVxY8QLxo)
